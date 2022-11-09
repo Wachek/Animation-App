@@ -12,6 +12,7 @@
 		8B7AFFE2291A9EC9008151D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7AFFE1291A9EC9008151D4 /* Assets.xcassets */; };
 		8B7AFFE5291A9EC9008151D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7AFFE4291A9EC9008151D4 /* Preview Assets.xcassets */; };
 		8B7AFFEC291A9FA6008151D4 /* ShieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7AFFEB291A9FA5008151D4 /* ShieldView.swift */; };
+		8B7AFFEE291C3DD8008151D4 /* SwordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7AFFED291C3DD8008151D4 /* SwordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		8B7AFFE1291A9EC9008151D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B7AFFE4291A9EC9008151D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8B7AFFEB291A9FA5008151D4 /* ShieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShieldView.swift; sourceTree = "<group>"; };
+		8B7AFFED291C3DD8008151D4 /* SwordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				8B7AFFDD291A9EC5008151D4 /* Animation_AppApp.swift */,
 				8B7AFFDF291A9EC5008151D4 /* ContentView.swift */,
+				8B7AFFED291C3DD8008151D4 /* SwordView.swift */,
 				8B7AFFEB291A9FA5008151D4 /* ShieldView.swift */,
 				8B7AFFE1291A9EC9008151D4 /* Assets.xcassets */,
 				8B7AFFE3291A9EC9008151D4 /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7AFFEE291C3DD8008151D4 /* SwordView.swift in Sources */,
 				8B7AFFE0291A9EC5008151D4 /* ContentView.swift in Sources */,
 				8B7AFFEC291A9FA6008151D4 /* ShieldView.swift in Sources */,
 				8B7AFFDE291A9EC5008151D4 /* Animation_AppApp.swift in Sources */,

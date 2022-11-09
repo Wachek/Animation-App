@@ -46,7 +46,6 @@ struct ShieldView: View {
                     path.addQuadCurve(to: CGPoint(x: middle, y: 0), control: CGPoint(x: quarter * 3, y: nearPoint * 1.2))
                     path.addLine(to: CGPoint(x: middle, y: size))
                 }
-                
                 .stroke(Color.black, lineWidth: 3)
             }
         }
