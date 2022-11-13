@@ -9,33 +9,33 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showAnimation = false
-//    private var title = "Start Animation"
     
     var body: some View {
-
+        
         VStack {
             Spacer()
             ZStack {
                 SwordView()
                     .rotationEffect(.degrees(135))
                     .frame(width: 250, height: 250)
-                    .offset(x: showAnimation ? 0 : -UIScreen.main.bounds.width)
-                    .offset(y: showAnimation ? 0 : -UIScreen.main.bounds.height / 2)
-                    .animation(.default)
+                    .offset(x: showAnimation ? 0 : -UIScreen.main.bounds.width, y: showAnimation ? 0 : -UIScreen.main.bounds.height / 2)
+                    .animation(.easeOut(duration: 0.5))
                 SwordView()
                     .rotationEffect(.degrees(-135))
                     .frame(width: 250, height: 250)
-                    .offset(x: showAnimation ? 0 : UIScreen.main.bounds.width)
-                    .offset(y: showAnimation ? 0 : -UIScreen.main.bounds.height / 2)
-                    .animation(.default)
+                    .offset(x: showAnimation ? 0 : UIScreen.main.bounds.width, y: showAnimation ? 0 : -UIScreen.main.bounds.height / 2)
+                    .animation(.easeOut(duration: 0.5))
                 ShieldView()
                     .frame(width: 200, height: 200)
                     .offset(y: 15)
                     .scaleEffect(showAnimation ? 1 : 1.2)
-
-//                    .rotationEffect(.degrees(showAnimation ? 360 : 0))
-                    .animation(.default)
-
+                    .animation(.interpolatingSpring(
+                        mass: 1.0,
+                        stiffness: 100,
+                        damping: 10,
+                        initialVelocity: 0
+                    ).delay(0.5)
+                    )
             }
             .padding()
             Spacer()
